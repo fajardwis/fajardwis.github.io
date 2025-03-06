@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ERP (Enterprise Resource Planning) - Fajar Digital Smart</title>
+    <meta name="description" content="ERP (Enterprise Resource Planning) solutions for businesses with Fajar Digital Smart.">
+    <meta name="keywords" content="ERP, Enterprise Resource Planning, Fajar Digital Smart, Business Solutions, IT Services">
+    <meta name="author" content="rajesh-doot">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--website-favicon-->
+    <link href="images/favicon.png" rel="icon">
+    <!--plugin-css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugin.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- template-style-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/darkmode.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Start Header -->
+    <header class="header-pr nav-bg-w main-header navfix fixed-top menu-white">
+        <div class="container-fluid m-pad">
+            <div class="menu-header">
+                <div class="dsk-logo"><a class="nav-brand" href="index.html">
+					  <img src="images/white-logo.png" alt="Logo" class="mega-white-logo"/>
+					  <img src="images/logo.png" alt="Logo" class="mega-darks-logo"/>
+					  </a>
+                </div>
+                <div class="custom-nav" role="navigation">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" class="menu-links">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="menu-links">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="menu-links">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="menu-links">Kontak</a>
+                        </li>
+                    </ul>
+                    <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
+                    <ul class="nav-list right-end-btn">
+                        <li class="hidemobile"><a href="https://wa.me/6281270290730?text=Hallo... saya ingin membuat aplikasi" class="btn-br bg-btn-wa btshad-b2 lnk"><i class="fas fa-phone-alt"></i> Hubungi Kami Via WhatsApp <span class="circle"></span></a> </li>
+                        <li class="hidedesktop darkmodeswitch">
+                            <div class="switch-wrapper"> <label class="switch" for="niwax"> <input type="checkbox" id="niwax"/>  <span class="slider round"></span> </label> </div>
+                        </li>
+                        <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Mobile Menu-->
+            <nav id="main-nav">
+                <ul class="first-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--End Header -->
+
+    <!--Start sidebar -->
+    <div class="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+        <div class="offcanvas-body">
+            <div class="cbtn animation">
+                <div class="btnclose"> <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+            </div>
+            <div class="form-block sidebarform">
+                <h4>Request A Quote</h4>
+                <form id="contactForm" data-bs-toggle="validator" class="shake mt20">
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <input type="text" id="name" placeholder="Enter name" required data-error="Please fill Out">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <input type="email" id="email" placeholder="Enter email" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <input type="text" id="mobile" placeholder="Enter mobile" required data-error="Please fill Out">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <select name="Dtype" id="Dtype" required>
+				  <option value="">Select Requirement</option>
+				  <option value="web">web</option>
+				  <option value="graphic">graphic</option>
+				  <option value="video">video</option>
+				</select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <span class="circle"></span></button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <div class="getintouchblock mt30">
+                <h4>Get In Touch</h4>
+                <p class="mt10">Please fill out the form below if you have a plan or project in mind that you'd like to share with us.</p>
+                <div class="media mt15">
+                    <div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
+                    <div class="media-body getintouchinfo">
+                        <a href="tel:123456790">+91-123 4567 890 <span>Mon-Fri 9am - 6pm</span></a>
+                    </div>
+                </div>
+                <div class="media mt15">
+                    <div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
+                    <div class="media-body getintouchinfo">
+                        <a href="tel:123456790">+91-123 4567 890 <span>Mon-Fri 9am - 6pm</span></a>
+                    </div>
+                </div>
+                <div class="media mt15">
+                    <div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
+                    <div class="media-body getintouchinfo">
+                        <a href="mailto:info@website.com">info@website.com <span>Online Support</span></a>
+                    </div>
+                </div>
+                <div class="media mt15">
+                    <div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
+                    <div class="media-body getintouchinfo">
+                        <a href="mailto:info@website.com">Jaipur, Rajasthan, India<span>Visit Our Office</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-data mt30">
+                <h4>Follow Us On:</h4>
+                <div class="social-media-linkz mt10">
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-youtube"></i></a>
+                    <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end sidebar -->
+    <!--Breadcrumb Area-->
+    <section class="breadcrumb-area banner-3">
+        <div class="text-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 v-center">
+                        <div class="bread-inner">
+                            <div class="bread-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="portfolio.html">Portofolio</a></li>
+                                    <li><a href="#">Detail Portofolio</a></li>
+                                </ul>
+                            </div>
+                            <div class="bread-title">
+                                <h2>Portofolio Kami</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Breadcrumb Area-->
+    <!--Start Portfolio-->
+    <section class="portfolio-page pad-tb">
+        <div class="container">
+            <div class="row justify-content-left">
+                <div class="col-lg-7">
+                    <div class="common-heading pp p-details portfolio-list-feature">
+                        <h2>ERP (Enterprise Resource Planning)</h2>
+                        <br>
+                        <a href="https://wa.me/6281270290730?text=Hallo... saya ingin membuat aplikasi" class="btn-main bg-btn lnk">Buat Sekarang! <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                        <p>
+                            ERP adalah sistem terintegrasi yang dirancang untuk mengelola berbagai aspek operasional bisnis dalam satu platform. Dengan modul-modul yang saling terhubung, ERP membantu meningkatkan efisiensi, transparansi, dan pengambilan keputusan yang lebih akurat.
+                        </p>
+                        
+                        <h3>Modul Utama:</h3>
+                        <ul>
+                            <li><strong>Raw Material</strong> – Mengelola bahan baku mulai dari pengadaan, penyimpanan, hingga distribusi untuk produksi.</li>
+                            <li><strong>Inventory & Warehouse</strong> – Memantau stok barang di gudang secara real-time, termasuk pengelolaan penerimaan dan pengiriman.</li>
+                            <li><strong>Work in Progress</strong> – Melacak status produksi dan memastikan efisiensi dalam proses manufaktur.</li>
+                            <li><strong>Finish Product</strong> – Mengelola produk jadi, pencatatan stok, dan distribusi ke pelanggan.</li>
+                            <li><strong>HR & Payroll</strong> – Sistem manajemen sumber daya manusia yang mencakup penggajian, absensi, serta manajemen karyawan.</li>
+                            <li><strong>Production Planning</strong> – Perencanaan produksi berbasis data untuk meningkatkan efisiensi dan menghindari pemborosan bahan baku.</li>
+                            <li><strong>Sales</strong> – Modul penjualan yang mencatat transaksi, manajemen pelanggan, dan analisis tren penjualan.</li>
+                            <li><strong>Finance</strong> – Pengelolaan keuangan yang mencakup pencatatan transaksi, anggaran, dan laporan keuangan.</li>
+                            <li><strong>Management</strong> – Dashboard manajemen untuk pengambilan keputusan strategis berdasarkan laporan dan analisis bisnis.</li>
+                        </ul>
+
+                        <p>
+                            Dengan ERP, perusahaan dapat mengintegrasikan semua aspek bisnis dalam satu platform yang fleksibel, akurat, dan efisien.
+                        </p>
+                        
+                        <p><strong>📊 Optimalkan bisnis Anda dengan sistem ERP terintegrasi! 🚀</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="portfolio-details">
+                        <div class="portfolio-meta link-hover">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-tags"></i>
+                                    <p>Kategori Proyek: <span>Web Application</span></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <p>Tanggal Proyek: <span>03 Agustus 2021</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 single-card-item">
+                    <div class="isotope_item pv-">
+                        <div class="item-image">
+                            <img src="images/portfolio/erp-1-landscape.png" alt="project name" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Portfolio-->
+
+    <!--Start Footer-->
+    <footer>
+        <!-- <div class="footer-row1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="email-subs">
+                            <h3>Get New Insights Weekly</h3>
+                            <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 v-center">
+                        <div class="email-subs-form">
+                            <form>
+                                <input type="email" placeholder="Email Your Address" name="emails">
+                                <button type="submit" name="submit" class="lnk btn-main bg-btn">Subscribe <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-row2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-9 col-sm-6  ftr-brand-pp">
+                        <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="images/logo.png" alt="Logo"/></a>
+                        <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="images/white-logo.png" alt="Logo" /></a>
+                        <p><strong>Fajar Digital Smart (FDS)</strong> hadir dengan layanan IT lengkap untuk membantu bisnis, industri, dan individu dalam mengoptimalkan teknologi. Dari <strong>konsultasi</strong> hingga <strong>implementasi</strong>, kami siap menjadi mitra digital terbaik Anda!</p>
+                        <a href="about.html" class="btn-main bg-btn3 lnk mt20">Tentang Kami <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5>Hubungi Kami</h5>
+                        <ul class="footer-address-list ftr-details">
+                            <li>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <p>Email <span> <a href="mailto:fajardigitalsmart@gmail.com">fajardigitalsmart@gmail.com</a></span></p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone-alt"></i></span>
+                                <p>WhatsApp <span> <a href="https://wa.me/6281270290730?text=Hallo... saya ingin membuat aplikasi">+62 812 7029 0730</a></span></p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>Alamat <span> Plandi, Jombang, Jawa Timur</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 v-center">
+                        <h5 class="mb10">Top App Development Companies</h5>
+                        <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+                    </div>
+                    <div class="col-lg-8 v-center">
+                        <ul class="footer-badges-">
+                            <li><a href="#"><img src="images/about/badges-a.png" alt="badges"></a></li>
+                            <li><a href="#"><img src="images/about/badges-b.png" alt="badges"></a></li>
+                            <li><a href="#"><img src="images/about/badges-c.png" alt="badges"></a></li>
+                            <li><a href="#"><img src="images/about/badges-d.png" alt="badges"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-row3">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- <div class="footer-social-media-icons">
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-instagram"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-youtube"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-vimeo-v"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-dribbble"></i></a>
+                                <a href="javascript:void(0)" target="blank"><i class="fab fa-behance"></i></a>
+                            </div> -->
+                            <div class="footer-">
+                                <p>© 2025 All Rights Reserved By <a href="/" target="blank">FajarDigitalSmart</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!-- WhatsApp Butuh Bantuan? -->
+    <a href="https://wa.me/6281270290730?text=Hallo... saya ingin membuat aplikasi" target="_blank" class="whatsapp-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+        Butuh Bantuan?
+    </a>
+    <!-- End WhatsApp Butuh Bantuan? -->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin.min.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <!--common script file-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
