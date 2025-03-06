@@ -1,3 +1,228 @@
-<script>
-    window.location.href="http://36.93.76.60:10009";
-</script>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Fajar Digital Smart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero.is-primary {
+      background: linear-gradient(135deg, #a9ccfe, #63c5ff);
+    }
+    
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      border-radius: 12px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #4a00e0;
+      width: 100%;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-content {
+      flex-grow: 1;
+      padding: 1.5rem;
+    }
+    
+    .card-footer {
+      border-top: 1px solid #f0f0f0;
+      background-color: #fafafa;
+    }
+    
+    .card-footer-item {
+      font-weight: 600;
+      color: #4a00e0;
+      transition: all 0.3s ease;
+    }
+    
+    .card-footer-item:hover {
+      background-color: #4a00e0;
+      color: white;
+    }
+    
+    .project-link {
+      display: block;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #f5f5f5;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+      border-left: 5px solid #4a00e0;
+    }
+    
+    .project-link:hover {
+      background-color: #4a00e0;
+      color: white;
+      transform: scale(1.02);
+    }
+    
+    
+    .social-icons {
+      margin-top: 1rem;
+    }
+    
+    .social-icons a {
+      margin: 0 10px;
+      color: #4a00e0;
+      transition: transform 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    
+    .service-icon {
+      font-size: 3rem;
+      color: #4a00e0;
+      margin-bottom: 1rem;
+    }
+    
+    .tags {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .tag {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      border-radius: 20px;
+      padding: 0.5em 1em;
+    }
+    
+    .centered-card {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .columns.is-centered {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      .column.is-4, .column.is-6-tablet, .column.is-12-mobile {
+        padding: 0.75rem;
+      }
+      
+      .card {
+        margin-bottom: 1rem;
+      }
+      
+      .title.is-4 {
+        font-size: 1.3rem;
+      }
+      
+      .centered-card {
+        max-width: 100%;
+      }
+      
+      .service-icon {
+        font-size: 2.5rem;
+      }
+      
+      .card-content {
+        padding: 1.25rem;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .card-content {
+        padding: 1rem;
+      }
+      
+      .service-icon {
+        font-size: 2rem;
+      }
+      
+      .title.is-4 {
+        font-size: 1.2rem;
+      }
+      
+      .subtitle.is-6 {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <figure class="mb-4">
+          <img class="avatar" src="https://fajardigitalsmart.com/images/logo.png" alt="Foto Profil">
+        </figure>
+        <h1 class="title is-2">CV Fajar Digital Smart</h1>
+        <p class="subtitle is-5">Portofolio layanan dan proyek terbaik kami</p>
+        
+        <!-- <div class="social-icons">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered mb-6">Layanan Kami</h2>
+      
+      <div class="columns is-centered is-multiline">
+        <!-- Project 1 -->
+        <div class="column is-12-mobile is-6-desktop">
+          <div class="card centered-card">
+            <div class="card-content">
+              <div class="has-text-centered mb-4">
+                <i class="fas fa-users service-icon"></i>
+              </div>
+              <p class="title is-4">Employee Self Service</p>
+              <p class="subtitle is-6">Web & Mobile</p>
+              <div class="content">
+                <p>Sistem manajemen karyawan lengkap dengan fitur absensi, pengajuan cuti, slip gaji, dan manajemen kinerja.</p>
+              </div>
+              <div class="tags">
+                <span class="tag is-primary">React</span>
+                <span class="tag is-info">Laravel</span>
+                <span class="tag is-success">MySQL</span>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="http://36.93.76.60:10009" target="_blank" class="card-footer-item">Demo</a>
+            </footer>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>CV Fajar Digital Smart</strong> - Solusi Digital Terbaik untuk Bisnis Anda
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
