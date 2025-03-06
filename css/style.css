@@ -6747,7 +6747,7 @@ body.hc-nav-open {
 .hc-offcanvas-nav .nav-container,
 .hc-offcanvas-nav .nav-wrapper,
 .hc-offcanvas-nav ul {
-    background: #101010
+    background: #002e6e;
 }
 
 .hc-offcanvas-nav h2 {
@@ -6786,8 +6786,8 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav li:not(.custom-content) a {
-    padding: 14px 15px;
-    font-size: 15px;
+    padding: 17px 15px;
+    font-size: 22px;
     color: #fff;
     z-index: 1;
     background: rgba(0, 0, 0, 0);
@@ -6808,7 +6808,8 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav li {
-    text-align: left
+    text-align: left;
+    border-bottom: 1px solid #999999;
 }
 
 .hc-offcanvas-nav li.nav-back a,
