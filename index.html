@@ -1196,7 +1196,7 @@
                             <p class="mb-0" style="font-size: 13px; color: rgba(255, 255, 255, 0.85) !important; margin-top: 2px;">Masukkan password untuk membuka demo</p>
                         </div>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background: transparent; border: none; font-size: 26px; color: #ffffff; opacity: 0.9; cursor: pointer; padding: 0; margin: 0; line-height: 1; outline: none; box-shadow: none;">
+                    <button type="button" class="close text-white" onclick="closeDemoAuthModal()" aria-label="Close" style="background: transparent; border: none; font-size: 26px; color: #ffffff; opacity: 0.9; cursor: pointer; padding: 0; margin: 0; line-height: 1; outline: none; box-shadow: none;">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -1214,8 +1214,8 @@
                                 <i class="fas fa-exclamation-circle mr-1"></i> Password yang Anda masukkan salah!
                             </div>
                         </div>
-                        <div class="d-flex justify-content-end mt-4 pt-2">
-                            <button type="button" class="btn mr-2" data-dismiss="modal" style="background-color: #f8f9fa; border: 1px solid #dee2e6; color: #495057; height: 42px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 14px;">Batal</button>
+                        <div class="d-flex justify-content-end align-items-center mt-4 pt-2" style="gap: 12px;">
+                            <button type="button" class="btn" onclick="closeDemoAuthModal()" style="margin-right: 12px !important; background-color: #f8f9fa; border: 1px solid #dee2e6; color: #495057; height: 42px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 14px;">Batal</button>
                             <button type="submit" id="btnSubmitDemoAuth" class="btn" style="background-color: #0D6EFD; border: none; color: #ffffff; height: 42px; padding: 0 24px; border-radius: 8px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);">
                                 <span>Buka Demo <i class="fas fa-arrow-right ml-1"></i></span>
                             </button>
@@ -1241,16 +1241,18 @@
         function isDemoAuthGranted() {
             try {
                 if (sessionStorage.getItem('smarthr_demo_auth') === 'granted') return true;
-            } catch(e) {}
-            try {
-                if (localStorage.getItem('smarthr_demo_auth') === 'granted') return true;
+                if (document.cookie.indexOf('smarthr_demo_auth=granted') !== -1) return true;
             } catch(e) {}
             return false;
         }
 
         function setDemoAuthGranted() {
             try { sessionStorage.setItem('smarthr_demo_auth', 'granted'); } catch(e) {}
-            try { localStorage.setItem('smarthr_demo_auth', 'granted'); } catch(e) {}
+            try { document.cookie = "smarthr_demo_auth=granted; path=/"; } catch(e) {}
+        }
+
+        function closeDemoAuthModal() {
+            $('#demoAuthModal').modal('hide');
         }
 
         function openDemoAuthModal(e) {
@@ -1287,7 +1289,7 @@
 
             if (hash === DEMO_PASSWORD_HASH) {
                 setDemoAuthGranted();
-                $('#demoAuthModal').modal('hide');
+                closeDemoAuthModal();
                 window.location.href = "smarthr/index.html#auth_granted";
             } else {
                 errorEl.classList.remove('d-none');

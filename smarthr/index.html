@@ -5,7 +5,7 @@
     (function() {
       var isGranted = false;
       try {
-        if (sessionStorage.getItem('smarthr_demo_auth') === 'granted' || localStorage.getItem('smarthr_demo_auth') === 'granted') {
+        if (sessionStorage.getItem('smarthr_demo_auth') === 'granted' || document.cookie.indexOf('smarthr_demo_auth=granted') !== -1) {
           isGranted = true;
         }
       } catch(e) {}
@@ -14,7 +14,7 @@
         isGranted = true;
         try {
           sessionStorage.setItem('smarthr_demo_auth', 'granted');
-          localStorage.setItem('smarthr_demo_auth', 'granted');
+          document.cookie = "smarthr_demo_auth=granted; path=/";
         } catch(e) {}
       }
 
