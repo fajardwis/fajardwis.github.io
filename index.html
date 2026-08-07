@@ -110,6 +110,9 @@
                         <li>
                             <a href="contact.html" class="menu-links">Kontak</a>
                         </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="openDemoAuthModal(event)" class="menu-links">Demo</a>
+                        </li>
                         
                     </ul>
                     <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
@@ -160,6 +163,15 @@
                                 <path d="M3 19h18l-9-8-9 8z"></path>
                             </svg>
                             Kontak
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" onclick="openDemoAuthModal(event)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10"></path>
+                                <path d="M3 19h18l-9-8-9 8z"></path>
+                            </svg>
+                            Demo
                         </a>
                     </li>
                     
@@ -615,65 +627,77 @@
                         <div class="swiper-wrapper">
                             <!-- Ubah setiap li menjadi swiper-slide -->
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/lantikya.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/lantikya.jpeg" alt="Lantikya" title="Lantikya" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/wahyu-abadi.png" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/wahyu-abadi.png" alt="Wahyu Abadi" title="Wahyu Abadi" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/platinum-logistic.jpg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/platinum-logistic.jpg" alt="Platinum Logistic" title="Platinum Logistic" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-cinta-selaras.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-cinta-selaras.jpeg" alt="PT Cinta Selaras" title="PT Cinta Selaras" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-seng-fong.png" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-seng-fong.png" alt="PT Seng Fong Moulding Perkasa" title="PT Seng Fong Moulding Perkasa" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-layo-seng-fong.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-layo-seng-fong.jpeg" alt="PT Layo Seng Fong" title="PT Layo Seng Fong" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-kroya-wood.png" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-kroya-wood.png" alt="PT Kroya Wood" title="PT Kroya Wood" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pdam-wonogiri.png" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pdam-wonogiri.png" alt="PDAM Giri Tirta Sari" title="PDAM Giri Tirta Sari" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/lalungwaterland.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/lalungwaterland.jpeg" alt="Lalung Waterland" title="Lalung Waterland" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/sawahan-waterpark.png" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/sawahan-waterpark.png" alt="Sawahan Waterpark" title="Sawahan Waterpark" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-holy-indonesia.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-holy-indonesia.jpeg" alt="PT Holy Indonesia" title="PT Holy Indonesia" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-karya-sang-agung.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-karya-sang-agung.jpeg" alt="PT Karya Sang Agung" title="PT Karya Sang Agung" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-pan-brothers-tbk.png" alt="PT Pan Brothers Tbk" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-pan-brothers-tbk.png" alt="PT Pan Brothers Tbk" title="PT Pan Brothers Tbk" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-teodore-pan-garmindo.jpeg" alt="PT TEODORE PAN GARMINDO" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-teodore-pan-garmindo.jpeg" alt="PT TEODORE PAN GARMINDO" title="PT TEODORE PAN GARMINDO" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-berkah-indo-garment.png" alt="PT Berkah Indo Garment" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-berkah-indo-garment.png" alt="PT Berkah Indo Garment" title="PT Berkah Indo Garment" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-eco-laundry.png" alt="PT Eco Laundry" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-eco-laundry.png" alt="PT Eco Laundry" title="PT Eco Laundry" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-eco-smart-garment-indonesia.jpg" alt="PT Eco Smart Garment Indonesia" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-eco-smart-garment-indonesia.jpg" alt="PT Eco Smart Garment Indonesia" title="PT Eco Smart Garment Indonesia" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-pancaprima-eka-brothers.png" alt="PT Pancaprima Eka Brothers" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-pancaprima-eka-brothers.png" alt="PT Pancaprima Eka Brothers" title="PT Pancaprima Eka Brothers" class="img-fluid" /></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/pt-prima-sejati-sejahtera.png" alt="PT Prima Sejati Sejahtera" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/pt-prima-sejati-sejahtera.png" alt="PT Prima Sejati Sejahtera" title="PT Prima Sejati Sejahtera" class="img-fluid" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="clients-logo"><img src="images/client/pt-andalan-mandiri-busana.png" alt="PT Andalan Mandiri Busana 1 - Karanganyar" title="PT Andalan Mandiri Busana 1 - Karanganyar" class="img-fluid" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="clients-logo"><img src="images/client/pt-andalan-mandiri-busana.png" alt="PT Andalan Mandiri Busana 2 - Boyolali" title="PT Andalan Mandiri Busana 2 - Boyolali" class="img-fluid" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="clients-logo"><img src="images/client/pt-tainan-enterprise.png" alt="PT. Tainan Enterprises Indonesia - Jakarta" title="PT. Tainan Enterprises Indonesia - Jakarta" class="img-fluid" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="clients-logo"><img src="images/client/pt-tainan-enterprise.png" alt="PT. Tainan Enterprises Indonesia - Cianjur" title="PT. Tainan Enterprises Indonesia - Cianjur" class="img-fluid" /></div>
                             </div>
                             
                             <!-- <div class="swiper-slide">
-                                <div class="clients-logo"><img src="images/client/assalam-snack.jpeg" alt="text" class="img-fluid" /></div>
+                                <div class="clients-logo"><img src="images/client/assalam-snack.jpeg" alt="text" title="text" class="img-fluid" /></div>
                             </div> -->
                         </div>
                         <!-- Tambahkan navigasi (opsional) -->
@@ -1155,6 +1179,128 @@
                     updateSlide(currentSlide);
                 }, 5000);
             });
+        });
+    </script>
+
+    <!-- Demo Password Protection Modal -->
+    <div class="modal fade" id="demoAuthModal" tabindex="-1" aria-labelledby="demoAuthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 16px; overflow: hidden; background-color: #ffffff;">
+                <div class="modal-header border-0 d-flex align-items-center justify-content-between" style="background: linear-gradient(135deg, #0D6EFD, #0b5ed7); color: #ffffff; padding: 20px 24px;">
+                    <div class="d-flex align-items-center">
+                        <div style="width: 42px; height: 42px; border-radius: 10px; background: rgba(255, 255, 255, 0.2); display: flex; align-items: center; justify-content: center; margin-right: 14px; border: 1px solid rgba(255, 255, 255, 0.3);">
+                            <i class="fas fa-lock" style="color: #ffffff; font-size: 18px;"></i>
+                        </div>
+                        <div>
+                            <h5 class="modal-title font-weight-bold mb-0" id="demoAuthModalLabel" style="color: #ffffff; font-size: 18px; font-weight: 700; line-height: 1.2;">Akses Demo SmartHR</h5>
+                            <p class="mb-0" style="font-size: 13px; color: rgba(255, 255, 255, 0.85) !important; margin-top: 2px;">Masukkan password untuk membuka demo</p>
+                        </div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background: transparent; border: none; font-size: 26px; color: #ffffff; opacity: 0.9; cursor: pointer; padding: 0; margin: 0; line-height: 1; outline: none; box-shadow: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 24px; background-color: #ffffff;">
+                    <form id="demoAuthForm" onsubmit="handleDemoAuthSubmit(event)">
+                        <div class="form-group mb-0">
+                            <label for="demoPasswordInput" style="font-weight: 600; color: #212529; font-size: 14px; margin-bottom: 8px; display: block;">Password Demo</label>
+                            <div style="position: relative; width: 100%;">
+                                <input type="password" class="form-control" id="demoPasswordInput" placeholder="Masukkan password demo..." required style="width: 100%; height: 46px; border-radius: 8px; padding-left: 14px; padding-right: 48px; border: 1px solid #ced4da; font-size: 14px; color: #212529; background-color: #ffffff; box-shadow: none; outline: none;">
+                                <button type="button" id="toggleDemoPasswordBtn" onclick="toggleDemoPasswordVisibility()" style="position: absolute; right: 0; top: 0; height: 46px; width: 46px; border: none; background: transparent; color: #6c757d; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10; outline: none; box-shadow: none;">
+                                    <i class="fas fa-eye" id="toggleDemoPasswordIcon" style="font-size: 16px;"></i>
+                                </button>
+                            </div>
+                            <div id="demoAuthError" class="text-danger small mt-2 d-none" style="font-weight: 500; font-size: 13px;">
+                                <i class="fas fa-exclamation-circle mr-1"></i> Password yang Anda masukkan salah!
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mt-4 pt-2">
+                            <button type="button" class="btn mr-2" data-dismiss="modal" style="background-color: #f8f9fa; border: 1px solid #dee2e6; color: #495057; height: 42px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 14px;">Batal</button>
+                            <button type="submit" id="btnSubmitDemoAuth" class="btn" style="background-color: #0D6EFD; border: none; color: #ffffff; height: 42px; padding: 0 24px; border-radius: 8px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);">
+                                <span>Buka Demo <i class="fas fa-arrow-right ml-1"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Password Protection Script -->
+    <script>
+        const DEMO_PASSWORD_HASH = "b8c024c56e3c4cc9f97c0d0278f404a1901991dd7a74379265c47a089a662457";
+
+        async function hashSHA256(text) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(text);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        function isDemoAuthGranted() {
+            try {
+                if (sessionStorage.getItem('smarthr_demo_auth') === 'granted') return true;
+            } catch(e) {}
+            try {
+                if (localStorage.getItem('smarthr_demo_auth') === 'granted') return true;
+            } catch(e) {}
+            return false;
+        }
+
+        function setDemoAuthGranted() {
+            try { sessionStorage.setItem('smarthr_demo_auth', 'granted'); } catch(e) {}
+            try { localStorage.setItem('smarthr_demo_auth', 'granted'); } catch(e) {}
+        }
+
+        function openDemoAuthModal(e) {
+            if (e) e.preventDefault();
+            if (isDemoAuthGranted()) {
+                window.location.href = "smarthr/index.html";
+                return;
+            }
+            $('#demoPasswordInput').val('');
+            $('#demoAuthError').addClass('d-none');
+            $('#demoAuthModal').modal('show');
+            setTimeout(() => $('#demoPasswordInput').focus(), 400);
+        }
+
+        function toggleDemoPasswordVisibility() {
+            const input = document.getElementById('demoPasswordInput');
+            const icon = document.getElementById('toggleDemoPasswordIcon');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+
+        async function handleDemoAuthSubmit(e) {
+            e.preventDefault();
+            const pass = document.getElementById('demoPasswordInput').value;
+            const errorEl = document.getElementById('demoAuthError');
+            const hash = await hashSHA256(pass);
+
+            if (hash === DEMO_PASSWORD_HASH) {
+                setDemoAuthGranted();
+                $('#demoAuthModal').modal('hide');
+                window.location.href = "smarthr/index.html#auth_granted";
+            } else {
+                errorEl.classList.remove('d-none');
+                document.getElementById('demoPasswordInput').select();
+            }
+        }
+
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('demo_auth') === 'required') {
+                openDemoAuthModal();
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
         });
     </script>
 </body>
