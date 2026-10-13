@@ -2557,7 +2557,62 @@ footer.ftshap:before {
 }
 
 .common-heading.pp p {
-    margin: 20px 0 0
+    margin: 20px 0 0;
+    line-height: 1.75;
+}
+
+.common-heading.pp.p-details h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #050748;
+    margin-bottom: 0;
+}
+
+.common-heading.pp.p-details h2 + br {
+    display: none;
+}
+
+.common-heading.pp.p-details .btn-main {
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.common-heading.pp.p-details p {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #4a5568;
+    margin: 18px 0;
+}
+
+.common-heading.pp.p-details p strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.common-heading.pp.p-details h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #050748;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.common-heading.pp.p-details h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 44px;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 2px;
 }
 
 .single-card-item {
@@ -2592,33 +2647,47 @@ footer.ftshap:before {
     color: #fff
 }
 
+.portfolio-details {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ebebeb;
+}
+
 .portfolio-meta ul li {
     font-size: 14px;
-    color: #fff;
     display: block;
     text-align: left;
     background: #fff;
     position: relative;
-    padding: 15px 20px 15px 55px;
-    border-bottom: 1px solid #ebebeb
+    padding: 16px 20px 16px 55px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.portfolio-meta ul li:last-child {
+    border-bottom: none;
 }
 
 .portfolio-meta ul li p {
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    background: #fff;
-    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    background: transparent;
+    display: block;
     color: #050748;
-    font-weight: 600
+    font-weight: 600;
+    margin: 0;
 }
 
 .portfolio-meta ul li p span {
     font-family: 'Open Sans', sans-serif;
     display: block;
-    margin-top: 2px;
+    margin-top: 3px;
     color: #6a6a8e;
-    font-weight: 400
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
 }
 
 .btn-outline,
@@ -2630,11 +2699,12 @@ footer.ftshap:before {
 
 .portfolio-meta ul li i {
     position: absolute;
-    left: 10px;
-    color: #050748;
-    font-size: 25px;
+    left: 18px;
+    color: #0d6efd;
+    font-size: 20px;
     top: 50%;
-    margin-top: -12.5px
+    transform: translateY(-50%);
+    margin-top: 0;
 }
 
 .pv-:hover .item-image img {
@@ -9600,16 +9670,53 @@ a.smllbtnn {
 .portfolio-list-feature ul {
     list-style-type: none;
     padding: 0;
+    margin: 20px 0 28px;
 }
 
 .portfolio-list-feature ul li {
-    background: #f4f4f4;
-    margin: 8px 0;
-    padding: 10px;
-    border-left: 5px solid #007BFF;
-    border-radius: 4px;
-    font-size: 16px;
+    position: relative;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0d6efd;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 14px 20px 14px 46px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    letter-spacing: 0.015em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
+
+.portfolio-list-feature ul li::before {
+    content: "\f058";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    color: #0d6efd;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.portfolio-list-feature ul li:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.08);
+    border-color: #cbd5e1;
+    border-left-color: #0b5ed7;
+}
+
+.portfolio-list-feature ul li strong {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    color: #0f172a;
+    letter-spacing: 0.01em;
+}
+
+
 
 .service-box {
     background: #f8f9fa;
